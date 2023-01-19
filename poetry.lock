@@ -1,15 +1,41 @@
 [[package]]
-name = "beautifulsoup"
-version = "3.2.2"
-description = "Screen-scraping library"
+name = "mido-fix"
+version = "1.2.12"
+description = "MIDI Objects for Python"
 category = "main"
 optional = false
 python-versions = "*"
 
+[package.extras]
+dev = ["check-manifest (>=0.35)", "flake8 (>=3.4.1)", "pytest (>=3.2.2)", "sphinx (>=1.6.3)"]
+ports = ["python-rtmidi (>=1.1.0)"]
+
+[[package]]
+name = "musicpy"
+version = "6.12"
+description = "Musicpy is a music programming language in Python designed to write music in very handy syntax through music theory and algorithms."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+mido-fix = "*"
+pygame = "*"
+
+[[package]]
+name = "pygame"
+version = "2.1.2"
+description = "Python Game Development"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "6ef4d46fe8eddc7e5fda1e832bd7c911c01e0d52c64c2b0766bfaafdc2ff60b7"
+content-hash = "ec37a67563abaa2e86f02422cd5e5384a8c6f00b7fa539f5f9e8a893fd962001"
 
 [metadata.files]
-beautifulsoup = []
+mido-fix = []
+musicpy = []
+pygame = []

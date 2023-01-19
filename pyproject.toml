@@ -6,6 +6,7 @@ authors = ["Zorex <zorex@brokerengine.com.au>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+musicpy = "^6.12"
 
 [tool.poetry.dev-dependencies]
 
