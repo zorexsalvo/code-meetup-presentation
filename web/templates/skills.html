@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Welcome to the Skills Page.</h1>
+    <p>
+        {% if username == None %}
+        Hi, stranger. What's your name?
+        {% else %}
+        Hi, {{username|title}}!
+        {% endif %}
+     </p>
+
+{% endblock %}
